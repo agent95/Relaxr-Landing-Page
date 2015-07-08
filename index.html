@@ -13,13 +13,27 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800, 400' rel='stylesheet' type='text/css'>
 </head>
-	
 	<body>
 		<!-- Container Start -->
 		<div id="container">
 			<header>
+
+				<!-- COMMENTS
+
+					<logo> Tag: 
+					Unfortunately the <logo> tag is not part of the standards yet.
+					The logo is commonly used as a link to the homepage and would usually placed using the anchor tags :
+					<a href="#homepage" class="logo">Logo</a>
+
+					this can then be selected using 'header .logo'
+				-->
 				<logo class="header-logo">Relaxr</logo>
 				<h1>Get piece of mind with a single tap</h1>
+
+				<!-- COMMENTS
+
+					The '.header-btn' can also be targetted using the selector: 'header button' In this case we might not need the classname '.header-btn' 
+				-->
 				<button class="header-btn">Get it Now</button>
 			</header>
 			<!-- Benefits Section -->
@@ -44,7 +58,22 @@
 			</section>
 			<!-- Footer -->
 			<footer>
+
+				<!-- COMMENTS
+
+					As mentioned earlier, please use the anchor tag, <a class="logo"></a> instead of the <logo> tag.
+					This can then be selected using 'footer .logo'
+
+					- Just being Picky :-) - Please avoid using the line-break tag <br> for the page layout. 
+						This should ideally only be used for text content. The CSS {display:block} rule can fix this.
+				-->
 				<logo class="footer-logo">Relaxr</logo><br>
+	
+				<!-- COMMENTS 
+
+					Because the anchor tag is part of the icon e.g. the twitter icon, you could place the class '.twitter-logo' on the anchor rather than on the image. The image can still be targetted using the selector '.twitter-logo img' 
+	
+				 -->
 				<a href="http://www.twitter.com"> <img src="images/twitter.png" class="twitter-logo"></a>
 				<a href="http://www.facebook.com"> <img src="images/facebook.png" class="facebook-logo"></a>
 				<p>&copy; Copyright 2015. Relaxr.</p>
