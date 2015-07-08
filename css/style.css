@@ -1,0 +1,235 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+header {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background: url(../images/header_bg.jpg);
+  height: 500px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 100px 0 40px 0;
+  text-align: center;
+}
+
+.header-btn {
+  background-color: #f9e42e;
+  border-radius: 5px;
+  border-style: none;
+  color: #033048;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 30px 0 80px 0;
+  padding: 10px 40px 10px 40px;
+}
+
+.header-btn:hover {
+  background-color: #DDCC3E;
+}
+
+
+.header-logo {
+  color: #fff;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 80px 530px 0 0;
+}
+
+/******************************************
+/* BENEFITS
+/*******************************************/
+
+.benefits {
+  background: #f0efef;
+  height: 400px;
+}
+
+.benefits h2 {
+  color: #033048;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 70px 0 50px 175px;
+}
+
+.benefits p {
+  color: #606161;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 0 20px 175px;
+}
+
+.benefits ul {
+  color: #606161;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  list-style: disc;
+  padding: 0 0 0 220px;
+}
+
+/******************************************
+/* QUOTE
+/*******************************************/
+
+.quote {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background: url(../images/testimonial_bg.jpg);
+  height: 350px;
+  opacity: .9;
+  text-align: center;
+}
+
+.quote blockquote {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  padding: 85px 0 20px 0;
+}
+
+.quote span {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/******************************************
+/* CTA
+/*******************************************/
+
+.cta {
+  background-color: #f9e42e;
+  padding: 50px;
+  text-align: center;
+}
+
+.cta button {
+  background-color: #033048;
+  border-radius: 5px;
+  border-style: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 15px 65px 15px 65px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #075077;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+footer {
+  background: #2E2E2E;
+  height: 300px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: inline-block;
+  color: #f9e42e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  padding: 50px;
+}
+
+footer a {
+  margin: 15px;
+}
+
+footer p {
+  padding: 50px 0 0 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
